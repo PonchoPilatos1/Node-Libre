@@ -11,7 +11,7 @@ const mime = {
 }
 
 const servidor = http.createServer((pedido, respuesta) => {
-  const url = new URL('http://localhost:8888' + pedido.url)
+  const url = new URL('https://node-libre-xd.onrender.com' + pedido.url)
   let camino = 'public' + url.pathname
   if (camino == 'public/')
     camino = 'public/index.html'
